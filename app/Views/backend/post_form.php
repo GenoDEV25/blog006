@@ -19,6 +19,12 @@
       <input type="text" name="title" class="w-full border p-2 rounded" value="<?= $post['title'] ?? '' ?>" required>
     </div>
 
+    <!-- Nuevo atributo descripción -->
+    <div>
+      <label class="block font-semibold">Descripción</label>
+      <input type="text" name="content" class="w-full border p-2 rounded" value="<?= $post['content'] ?? '' ?>" required>
+    </div>
+
     <div>
       <label class="block font-semibold">Fecha de Creación</label>
       <input type="date" name="created_at" class="w-full border p-2 rounded"

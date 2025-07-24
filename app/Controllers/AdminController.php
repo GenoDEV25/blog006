@@ -31,6 +31,8 @@ class AdminController extends BaseController
 
         $model->save([
             'title' => $this->request->getPost('title'),
+            // Nuevo atributo descripción
+            'content' => $this->request->getPost('content'),
             'created_at' => $this->request->getPost('created_at'),
             'category' => $this->request->getPost('category'),
             'image' => $imageName
@@ -60,6 +62,8 @@ class AdminController extends BaseController
 
         $model->update($id, [
             'title' => $this->request->getPost('title'),
+            // Nuevo atributo descripción
+            'content' => $this->request->getPost('content'),
             'created_at' => $this->request->getPost('created_at'),
             'category' => $this->request->getPost('category'),
             'image' => $imageName
