@@ -15,6 +15,7 @@
       <tr>
         <th class="border p-3">ID</th>
         <th class="border p-3">Título</th>
+        <th class="border p-3">Descripción</th>
         <th class="border p-3">Categoría</th>
         <th class="border p-3">Fecha</th>
         <th class="border p-3">Acciones</th>
@@ -26,6 +27,7 @@
           <tr>
             <td class="border p-3"><?= $post['id'] ?></td>
             <td class="border p-3"><?= esc($post['title']) ?></td>
+            <td class="border p-3"><?= esc($post['content']) ?></td> <!-- Nuevo atributo descripción -->
             <td class="border p-3"><?= esc($post['category']) ?></td>
             <td class="border p-3"><?= date('Y-m-d', strtotime($post['created_at'])) ?></td>
             <td class="border p-3 flex gap-2">

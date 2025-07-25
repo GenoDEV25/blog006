@@ -34,7 +34,9 @@
           <h3 class="text-lg font-semibold"><?= esc($post['title']) ?></h3>
           <p class="text-gray-500 text-sm mt-1">
             <?= esc($post['category']) ?><br>
-            <?= date('F d, Y', strtotime($post['created_at'])) ?>
+            <?= date('F d, Y', strtotime($post['created_at'])) ?><br>
+            <!-- Nuevo atributo descripción -->
+            <?= esc($post['content']) ?><br>
           </p>
         </div>
         <?php endforeach; ?>
